@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+}
+
+.main-title {
+    max-width: 1440px;
+    margin: 80px auto;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(72, 104, 207);
+}
+
+#carousel {
+    max-width: 1440px;
+    margin: 80px auto;
+}
+
+#carousel1 {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.item__image {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.item__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Boutons de contrôle */
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.btn:active {
+transform: scale(1.1);
+}
+
+.btn-prev {
+top: 45%;
+left: 2%;
+}
+
+.btn-next {
+top: 45%;
+right: 2%;
+}
+
+/* Définition des points de contrôle */
+.carousel-dots {
+    position: absolute;
+    z-index: 5;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style des points de contrôle */
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2596be;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Styles pour les points de navigation du carrousel */
+.carousel-dots .active {
+    /* Border de 10px pour le point actif */
+    border: 10px solid #761530 !important;
+    /* !important permet de surcharger les autres styles éventuels */
+}
+.carousel-dots .inactive {
+    /* Border de 10px pour les points inactifs */
+    border: 10px solid #2596be;
+}
